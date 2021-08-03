@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/konva@8.1.1/konva.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <title>drag</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-image: url("img/0-01.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>끌어와서 글자 만들기</h1>
+    <div id="container"></div>
+    <script>
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+
+      var stage = new Konva.Stage({
+        container: 'container',
+        width: width,
+        height: height,
+      });
+
+      var layer = new Konva.Layer();
+      stage.add(layer);
+
+      // 이미지추가-설정
+      var ele1 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 124,
+        height: 95,
+        stroke: 'red',
+        strokeWidth: 0,
+        draggable: true,
+      });
+      layer.add(ele1);
+
+      var ele2 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 36,
+        height: 51,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele2);
+
+      var ele3 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 38,
+        height: 18,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele3);
+
+      var ele4 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 10,
+        height: 21,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele4);
+
+      var ele5 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 30,
+        height: 16,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele5);
+
+      var ele6 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 10,
+        height: 14,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele6);
+
+      var ele7 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 9,
+        height: 10,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele7);
+
+      var ele8 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 109,
+        height: 81,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele8);
+
+      var ele9 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 14,
+        height: 13,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele9);
+
+      var ele10 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 8,
+        height: 21,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele10);
+
+      var ele11 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 16,
+        height: 41,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele11);
+
+      var ele12 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 34,
+        height: 96,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele12);
+
+      var ele13 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 13,
+        height: 42,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele13);
+
+      var ele14 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 10,
+        height: 61,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele14);
+
+      var ele15 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 71,
+        height: 87,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele15);
+
+      var ele16 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 7,
+        height: 91,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele16);
+
+      var ele17 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 8,
+        height: 44,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele17);
+
+      var ele18 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 18,
+        height: 69,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele18);
+
+      var ele19 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 5,
+        height: 20,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele19);
+
+      var ele20 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 12,
+        height: 36,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele20);
+
+      var ele21 = new Konva.Image({
+        x: 20,
+        y: 320,
+        width: 57,
+        height: 39,
+        draggable: true,
+        stroke: 'red',
+        strokeWidth: 0,
+      });
+      layer.add(ele21);
+
+      // 이미지추가-설정
+
+      var imageObj1 = new Image();
+      imageObj1.onload = function () {
+        ele1.image(imageObj1);
+      };
+      imageObj1.src = 'img/0-02.png';
+
+      var imageObj2 = new Image();
+      imageObj2.onload = function () {
+        ele2.image(imageObj2);
+      };
+      imageObj2.src = 'img/0-03.png';
+
+      var imageObj3 = new Image();
+      imageObj3.onload = function () {
+        ele3.image(imageObj3);
+      };
+      imageObj3.src = 'img/0-04.png';
+
+      var imageObj4 = new Image();
+      imageObj4.onload = function () {
+        ele4.image(imageObj4);
+      };
+      imageObj4.src = 'img/0-05.png';
+
+      var imageObj5 = new Image();
+      imageObj5.onload = function () {
+        ele5.image(imageObj5);
+      };
+      imageObj5.src = 'img/0-06.png';
+
+      var imageObj6 = new Image();
+      imageObj6.onload = function () {
+        ele6.image(imageObj6);
+      };
+      imageObj6.src = 'img/0-07.png';
+
+      var imageObj7 = new Image();
+      imageObj7.onload = function () {
+        ele7.image(imageObj7);
+      };
+      imageObj7.src = 'img/0-08.png';
+
+      var imageObj8 = new Image();
+      imageObj8.onload = function () {
+        ele8.image(imageObj8);
+      };
+      imageObj8.src = 'img/0-09.png';
+
+      var imageObj9 = new Image();
+      imageObj9.onload = function () {
+        ele9.image(imageObj9);
+      };
+      imageObj9.src = 'img/0-10.png';
+
+      var imageObj10 = new Image();
+      imageObj10.onload = function () {
+        ele10.image(imageObj10);
+      };
+      imageObj10.src = 'img/0-11.png';
+
+      var imageObj11 = new Image();
+      imageObj11.onload = function () {
+        ele11.image(imageObj11);
+      };
+      imageObj11.src = 'img/0-12.png';
+
+      var imageObj12 = new Image();
+      imageObj12.onload = function () {
+        ele12.image(imageObj12);
+      };
+      imageObj12.src = 'img/0-13.png';
+
+      var imageObj13 = new Image();
+      imageObj13.onload = function () {
+        ele13.image(imageObj13);
+      };
+      imageObj13.src = 'img/0-14.png';
+
+      var imageObj14 = new Image();
+      imageObj14.onload = function () {
+        ele14.image(imageObj14);
+      };
+      imageObj14.src = 'img/0-15.png';
+
+      var imageObj15 = new Image();
+      imageObj15.onload = function () {
+        ele15.image(imageObj15);
+      };
+      imageObj15.src = 'img/0-16.png';
+
+      var imageObj16 = new Image();
+      imageObj16.onload = function () {
+        ele16.image(imageObj16);
+      };
+      imageObj16.src = 'img/0-17.png';
+
+      var imageObj17 = new Image();
+      imageObj17.onload = function () {
+        ele17.image(imageObj17);
+      };
+      imageObj17.src = 'img/0-18.png';
+
+      var imageObj18 = new Image();
+      imageObj18.onload = function () {
+        ele18.image(imageObj18);
+      };
+      imageObj18.src = 'img/0-19.png';
+
+      var imageObj19 = new Image();
+      imageObj19.onload = function () {
+        ele19.image(imageObj19);
+      };
+      imageObj19.src = 'img/0-20.png';
+
+      var imageObj20 = new Image();
+      imageObj20.onload = function () {
+        ele20.image(imageObj20);
+      };
+      imageObj20.src = 'img/0-21.png';
+
+
+      var imageObj21 = new Image();
+      imageObj21.onload = function () {
+        ele21.image(imageObj21);
+      };
+      imageObj21.src = 'img/0-22.png';
+
+      // use event delegation to update pointer style
+      // and apply borders
+      layer.on('mouseover', function (evt) {
+        var shape = evt.target;
+        document.body.style.cursor = 'pointer';
+        shape.strokeEnabled(false);
+      });
+      layer.on('mouseout', function (evt) {
+        var shape = evt.target;
+        document.body.style.cursor = 'default';
+        shape.strokeEnabled(true);
+      });
+    </script>
+  </body>
+</html>
